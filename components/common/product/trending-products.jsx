@@ -115,10 +115,7 @@ const Products = ({ h4, h5 }) => {
                                         <a>{product.title}</a>
                                       </Link>
                                     </h4>
-                                    <div className="product__price transition-3">
-                                      <span>${product.price}.00</span>
-                                      <span className="old-price">${product.old_price}.00</span>
-                                    </div>
+                                    
                                   </div>
                                   <div className="add-cart p-absolute transition-3">
                                     <button onClick={() => dispatch(cart_product(product))}>+ Add to Cart</button>
@@ -157,3 +154,7 @@ const Products = ({ h4, h5 }) => {
 };
 
 export default Products;
+//<div className="product__price transition-3">
+//<span>${product.price}.00</span>
+//<span className="old-price">${product.old_price}.00</span>
+//</div>

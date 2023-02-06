@@ -1,24 +1,23 @@
 export const home_slider = [
   {
     id: 1,
-    bgImg: '/assets/img/slider/slider-1.jpg',
-    title: <>Handmade <br /> Hand carved Coffee</>,
-    subtitle: <>As rich and unique as the coffee beans it is intended
-      for, this little scoop will make your morning ritual a special occasion every day.</>,
+    bgImg: '/assets/img/slider/slider-1.png',
+    title: <>Handmade <br /> Best Quality</>,
+    subtitle: <> 100% handmade products with a luxury olive wood quality, the Tunisian olive wood is the best in quality in the world.</>,
   },
   {
     id: 2,
-    bgImg: 'assets/img/slider/slider-2.jpg',
-    title: <>Think Different &<br /> Do it otherwise</>,
-    subtitle: <>Claritas est etiam processus dynamicus, qui sequitur
-      mutationem consuetudium lectorum.</>,
+    bgImg: 'assets/img/slider/slider-2.png',
+    title: <>Think Different &<br /> Amazing Models </>,
+    subtitle: <> Think of Different Amazing Models of Innovation and artistic
+    you can have a perfect gift for everyone on your list this year. 
+    </>,
   },
   {
     id: 3,
-    bgImg: 'assets/img/slider/slider-3.jpg',
-    title: <>High Beam<br /> by Tom Chung</>,
-    subtitle: <>High Beam is an adjustable desk or shelf light that
-      offers a wide variety of lighting possibilities.</>,
+    bgImg: 'assets/img/slider/slider-3.png',
+    title: <>Big Variety<br />Best Story </>,
+    subtitle: <>We have a wide variety of products in our story. We have a wide variety of story products to choose from. </>,
   },
 ]
 

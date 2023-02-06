@@ -6,9 +6,9 @@ const products = [
     product:[
       {
         id:1,
-        img:'/assets/img/shop/product/product-1.jpg',
+        img:'/assets/img/shop/product/product-1.png',
         images:[
-          {src:'/assets/img/shop/product/product-1.jpg'},
+          {src:'/assets/img/shop/product/product-1.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
@@ -17,7 +17,7 @@ const products = [
         title:'Wooden container Bowl',
         price:96.00,
         old_price:120.00,
-        rating:3,
+        rating:5,
         desc:'Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.',
         sizes:['L','XL','XXL'],
         colors:['Yellow','Blue','White',' Ocean Blue'],
@@ -99,13 +99,13 @@ const products = [
     product:[
       {
         id:3,
-        img:'/assets/img/shop/product/product-2.jpg',
+        img:'/assets/img/shop/product/product-2.png',
         images:[
-          {src:'/assets/img/shop/product/product-2.jpg'},
+          {src:'/assets/img/shop/product/product-2.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-11.jpg',
+        thumb_img:'/assets/img/shop/product/product-2.png',
         category:"Men's",
         title:'Eunice coffee table',
         price:92.00,
@@ -143,9 +143,9 @@ const products = [
 
       {
         id:4,
-        img:'/assets/img/shop/product/product-6.jpg',
+        img:'/assets/img/shop/product/product-6.png',
         images:[
-          {src:'/assets/img/shop/product/product-6.jpg'},
+          {src:'/assets/img/shop/product/product-6.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
@@ -192,13 +192,13 @@ const products = [
     product:[
       {
         id:5,
-        img:'/assets/img/shop/product/product-3.jpg',
+        img:'/assets/img/shop/product/product-3.png',
         images:[
-          {src:'/assets/img/shop/product/product-3.jpg'},
+          {src:'/assets/img/shop/product/product-3.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-8.jpg',
+        thumb_img:'/assets/img/shop/product/product-3.png',
         category:"Decoration",
         title:'Set of 2 baskets',
         price:87.00,
@@ -241,7 +241,7 @@ const products = [
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-1.jpg',
+        thumb_img:'/assets/img/shop/product/product-1.png',
         category:"Chair",
         title:'Eames House Bird in Black',
         price:77.00,
@@ -285,9 +285,9 @@ const products = [
     product:[
       {
         id:7,
-        img:'/assets/img/shop/product/product-4.jpg',
+        img:'/assets/img/shop/product/product-4.png',
         images:[
-          {src:'/assets/img/shop/product/product-4.jpg'},
+          {src:'/assets/img/shop/product/product-4.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
@@ -335,7 +335,7 @@ const products = [
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-3.jpg',
+        thumb_img:'/assets/img/shop/product/product-3.png',
         category:"Accessories",
         title:'Georg Tv cabinet',
         price:75.00,
@@ -422,13 +422,13 @@ const products = [
 
       {
         id:10,
-        img:'/assets/img/shop/product/product-4.jpg',
+        img:'/assets/img/shop/product/product-4.png',
         images:[
-          {src:'/assets/img/shop/product/product-4.jpg'},
+          {src:'/assets/img/shop/product/product-4.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-1.jpg',
+        thumb_img:'/assets/img/shop/product/product-1.png',
         category:"Men's",
         title:'Water Bottle',
         price:75.00,
@@ -472,13 +472,13 @@ const products = [
     product:[
       {
         id:11,
-        img:'/assets/img/shop/product/product-6.jpg',
+        img:'/assets/img/shop/product/product-6.png',
         images:[
-          {src:'/assets/img/shop/product/product-6.jpg'},
+          {src:'/assets/img/shop/product/product-6.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-2.jpg',
+        thumb_img:'/assets/img/shop/product/product-2.png',
         category:"Music",
         title:'Tailored Fit Mesh-Panel',
         price:67.00,
@@ -521,7 +521,7 @@ const products = [
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-2.jpg',
+        thumb_img:'/assets/img/shop/product/product-2.png',
         category:"Decoration",
         title:'Water Bottle',
         price:55.00,
@@ -570,7 +570,7 @@ const products = [
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-4.jpg',
+        thumb_img:'/assets/img/shop/product/product-4.png',
         category:"Chair",
         title:'Rosmo Namino',
         price:99.00,
@@ -613,7 +613,7 @@ const products = [
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
-        thumb_img:'/assets/img/shop/product/product-1.jpg',
+        thumb_img:'/assets/img/shop/product/product-1.png',
         category:"Lighting",
         title:'Plaid Cotton Shirt',
         price:122.00,
@@ -657,9 +657,9 @@ const products = [
       {
         id:15,
         featured:true,
-        img:'/assets/img/shop/banner/banner-big-1.jpg',
+        img:'/assets/img/shop/banner/banner-big-1.png',
         images:[
-          {src:'/assets/img/shop/banner/banner-big-1.jpg'},
+          {src:'/assets/img/shop/banner/banner-big-1.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],
@@ -709,9 +709,9 @@ const products = [
       {
         id:16,
         featured:true,
-        img:'/assets/img/shop/banner/banner-big-2.jpg',
+        img:'/assets/img/shop/banner/banner-big-2.png',
         images:[
-          {src:'/assets/img/shop/banner/banner-big-2.jpg'},
+          {src:'/assets/img/shop/banner/banner-big-2.png'},
           {src:'/assets/img/shop/product/quick-view/quick-big-2.jpg'},
           {src:'/assets/img/shop/product/quick-view/quick-big-3.jpg'},
         ],

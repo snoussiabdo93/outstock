@@ -19,7 +19,6 @@ const index = () => {
       <BannerTwo/>
       <SaleOff/>
       <Brands/>
-      <BlogArea/>
       <SubscribeArea/>
       <Footer/>
     </>

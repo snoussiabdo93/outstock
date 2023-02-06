@@ -7,8 +7,7 @@ const footerWidget = [
     id: 1,
     title: 'information',
     footer__links: [
-      { list: 'About Us' },
-      { list: 'Careers' },
+      { list: 'About Us', link: '/about'},
       { list: 'Delivery Inforamtion' },
       { list: 'Privacy Policy' },
       { list: 'Terms & Condition' },
@@ -19,7 +18,7 @@ const footerWidget = [
     title: 'Customer Service',
     footer__links: [
       { list: 'Shipping Policy' },
-      { list: 'Help & Contact Us' },
+      { list: 'Help & Contact Us',link:'/contact' },
       { list: 'Returns & Refunds' },
       { list: 'Online Stores' },
       { list: 'Terms & Conditions' },
@@ -31,7 +30,7 @@ const Footer = ({ df }) => {
   return (
     <>
       <section className={`footer__area footer-bg ${df ? 'box-m-15' : ''}`}>
-        <div className="footer__top pt-100 pb-60">
+        <div className="footer__top pt-30 pb-60">
           <div className="container">
             <div className="row">
               <div className="col-xl-6 col-lg-6 col-md-6 col-12">
@@ -39,7 +38,7 @@ const Footer = ({ df }) => {
                   <div className="footer__widget-title mb-25">
                     <Link href="/">
                       <a>
-                        <Image src={logo} alt="logo" />
+                        <Image src={logo} alt="logo" width="120vw" height="120vw" />
                       </a>
                     </Link>
                   </div>
@@ -53,7 +52,7 @@ const Footer = ({ df }) => {
                             <i className="fal fa-map-marker-alt"></i>
                           </div>
                           <div className="text">
-                            <span>Add: 1234 Heaven Stress, Beverly Hill, Melbourne, USA.</span>
+                            <span>Add: route de tunis km8 sfax , Tunisia .</span>
                           </div>
                         </li>
                         <li>
@@ -61,7 +60,7 @@ const Footer = ({ df }) => {
                             <i className="fal fa-envelope-open-text"></i>
                           </div>
                           <div className="text">
-                            <span>Email: Contact@basictheme.com</span>
+                            <span>Email: Contact@olizana.com</span>
                           </div>
                         </li>
                         <li>
@@ -69,7 +68,7 @@ const Footer = ({ df }) => {
                             <i className="fal fa-phone-alt"></i>
                           </div>
                           <div className="text">
-                            <span>Phone Number: (800) 123 456 789</span>
+                            <span>Phone Number: (+216)  55 022 440</span>
                           </div>
                         </li>
                       </ul>
@@ -87,7 +86,7 @@ const Footer = ({ df }) => {
                       <div className="footer__links">
                         <ul>
                           {item.footer__links.map((link, index) => (
-                            <li key={index}><a href="#">{link.list}</a></li>
+                            <li key={index}><a href={link.link?link.link:"#"}>{link.list}</a></li>
                           ))}
                         </ul>
                       </div>
@@ -105,23 +104,19 @@ const Footer = ({ df }) => {
               <div className="col-xl-6 col-lg-7">
                 <div className="footer__copyright">
                   <p>Copyright © <Link href="/">
-                    <a>Outstock</a>
+                    <a> Olizana </a>
                   </Link>
-                    all rights reserved. Powered by
-                    <Link href="/">
-                      <a>Theme_pure</a>
-                    </Link>
+                  
                   </p>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-5">
                 <div className="footer__social f-right">
                   <ul>
-                    <li><a href="#"><i className="fab fa-dribbble"></i></a></li>
                     <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i className="fab fa-instagram"></i></a></li>
                     <li><a href="#"><i className="fab fa-behance"></i></a></li>
-                    <li><a href="#"><i className="fas fa-share-alt"></i></a></li>
+                    <li><a href="#"><i className="fab  fa-mail"></i></a></li>
                   </ul>
                 </div>
               </div>

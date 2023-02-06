@@ -30,9 +30,7 @@ const CartArea = () => {
                       <tr>
                         <th className="product-thumbnail">Images</th>
                         <th className="cart-product-name">Product</th>
-                        <th className="product-price">Unit Price</th>
                         <th className="product-quantity">Quantity</th>
-                        <th className="product-subtotal">Total</th>
                         <th className="product-remove">Remove</th>
                       </tr>
                     </thead>
@@ -51,7 +49,6 @@ const CartArea = () => {
                               <a>{item.title}</a>
                             </Link>
                           </td>
-                          <td className="product-price"><span className="amount">${item.price}</span></td>
                           <td className="product-quantity">
                             <div className="cart-plus-minus">
                               <input type="text" onChange={handleChange} value={item.quantity} />
@@ -59,9 +56,7 @@ const CartArea = () => {
                               <div onClick={() => dispatch(cart_product(item))} className="inc qtybutton">+</div>
                             </div>
                           </td>
-                          <td className="product-subtotal">
-                            <span className="amount">${item.quantity * item.price}</span>
-                          </td>
+                          
                           <td onClick={() => dispatch(remove_cart_product(item))} className="product-remove">
                             <button ><i className="fa fa-times"></i></button>
                           </td>
@@ -74,12 +69,7 @@ const CartArea = () => {
                 <div className="row">
                   <div className="col-12">
                     <div className="coupon-all">
-                      <div className="coupon">
-                        <input required id="coupon_code" className="input-text" name="coupon_code"
-                          placeholder="Coupon code" type="text" />
-                        <button className="os-btn os-btn-black" name="apply_coupon" type="submit">Apply
-                          coupon</button>
-                      </div>
+                   
                       <div className="coupon2">
                         <button onClick={() => dispatch(clear_cart())} className="os-btn os-btn-black" 
                         name="update_cart" type="button">Clear cart</button>
@@ -92,11 +82,11 @@ const CartArea = () => {
                     <div className="cart-page-total">
                       <h2>Cart totals</h2>
                       <ul className="mb-20">
-                        <li>Subtotal <span>${total}</span></li>
-                        <li>Total <span>${total}</span></li>
+                        <li>Total Products <span>{cartItems.length}</span></li>
+                        <li>Total Quentity <span>{cartItems.reduce((a, b)=> a + b.quantity,0)}</span></li>
                       </ul>
                       <Link href={'/checkout'}>
-                        <a className="os-btn">Proceed to checkout</a>
+                        <a className="os-btn"> Get A Quotation </a>
                       </Link>
                     </div>
                   </div>
@@ -111,3 +101,14 @@ const CartArea = () => {
 };
 
 export default CartArea;
+
+/*<span className="amount">${item.price}</span>*/
+/*<td className="product-subtotal">
+                            <span className="amount">${item.quantity * item.price}</span>
+                          </td>*/
+/*   <div className="coupon">
+                        <input required id="coupon_code" className="input-text" name="coupon_code"
+                          placeholder="Coupon code" type="text" />
+                        <button className="os-btn os-btn-black" name="apply_coupon" type="submit">Apply
+                          coupon</button>
+                      </div>*/

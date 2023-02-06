@@ -4,22 +4,22 @@ const banners = [
   // banner one
   {
     id:1,
-    img:'/assets/img/shop/banner/banner-sm-1.jpg',
-    title:<>Sunflower Clock <br/> Quartz Hands</>,
+    img:'/assets/img/shop/banner/banner-sm-1.png',
+    title:<> <strong>  <h3>Kitchen Products</h3> </strong>  Over 100 typs  <br/>   </>,
     btnText:'Discover now'
   },
   {
     id:2,
-    img:'/assets/img/shop/banner/banner-sm-2.jpg',
-    title:<>Chair Kimi No Isu <br/> Project</>,
+    img:'/assets/img/shop/banner/banner-sm-2.png',
+    title:<> <strong>  <h3>Chess</h3>  </strong> Over 10 models  <br/>     </>,
     btnText:'Discover now'
   },
   {
     id:3,
-    img:'/assets/img/shop/banner/banner-sm-3.jpg',
-    title:<>Sweeper and Dustpan <br/> by Jan Kochanski</>,
+    img:'/assets/img/shop/banner/banner-sm-3.png',
+    title:<> <strong> <h3> Accessories</h3> </strong>  Over 20 models  <br/>    </>,
     btnText:'Discover now'
-  },
+  }, 
   // banner two
   {
     id:4,

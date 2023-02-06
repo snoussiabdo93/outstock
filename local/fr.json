@@ -1,0 +1,52 @@
+{
+  "titre": "Video Téléconsultation",
+  "Dashboard":"Acueill",
+
+
+  "Avalability": " Disponibilité" ,
+  "Appointements": "les rendez-vous",
+  "Waiting":"Salle d'attente",
+  "Patients":"Patients",
+  
+  "Payment":"Payment",
+  
+  "preAppt":"Questions Pré-Consult",
+  "Enterpass":"Enter Mot de passe",
+  "Messages":"Messages",
+  "signin":"s'identifier",
+  "signup":"S'inscrire  ",
+  "Profile":"Profile",
+  "login":"Connexion", 
+"password":"Mot de passe",
+"forgetpassword":"Mot de passe oublie?",
+"youhavecompte":"Vous avez un compte?",
+"errlogin":"Login invalide verifiez l'email ou mot passe",
+"fistname":"Nom",
+"lastname":"Prénom",
+"address":"Adresse",
+"state":"Ville",
+"confpw":"Comfirmez mot de passe",
+"paticmode":"Mode de pratique",
+"nationalid ":"Numero  national",
+"acceptcond":"J'accepte les termes et conditions.",
+"errMaj":"Au moins une majuscule",
+"errMin":"Au moins une minuscule",
+"err8c":"Au moins 8 caractères minimum",
+"errSp":"Au moins un caractère spécial",
+"errCh":"Au moins un chiffre",
+"female":"Femme",
+"male":"Homme",
+"speciality":"Specialité",
+
+"Private" :"Privé",
+"hospitalDoctor":"Hospitalier",
+"university-hospital-Doctor":"Hospitalo-Universitaire",
+"country":"Pays",
+"discSignup":"Veuillez remplir ce formulaire pour créer un compte !",
+"jobInfo":" Information sur Metier ",
+"updatepw":" Modifiez votre mot de passe"
+
+
+
+
+}

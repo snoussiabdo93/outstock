@@ -31,7 +31,7 @@ const Header = ({ header_big,white_bg }) => {
                 <div className="logo">
                   <Link href="/">
                     <a>
-                      <Image src={logo} alt="logo" />
+                      <Image src={logo} alt="logo" width="120vw" height="120vw" />
                     </a>
                   </Link>
                 </div>
@@ -56,13 +56,13 @@ const Header = ({ header_big,white_bg }) => {
                       </li>
                       <li>
                         <button className="cart">
-                          <i className="ion-bag"></i> Cart <span>({quantity})</span>
+                          <i className="ion-bag"></i> Quotation  Cart  <span>({quantity})</span>
                         </button>
                         {/* cart area start */}
                         <Cart />
                         {/* cart area end */}
-                      </li>
-                      <li> <button ><i className="far fa-bars"></i></button>
+                      </li> 
+                      <li> <button ><i className="fa fa-language" aria-hidden="true"></i>  </button> 
                         <ul className="extra-info">
                           {extra_info.map((item, index) => (
                             <li key={index}>

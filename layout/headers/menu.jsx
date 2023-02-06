@@ -19,7 +19,7 @@ const Menu = () => {
               </ul>}
 
               {item.hasDropdown && item.megamenu && <ul className="submenu transition-3" style={{ background:
-                `url(${'/assets/img/bg/mega-menu-bg.jpg'})`,backgroundRepeat:'no-repeat',backgroundPosition:'center right',backgroundSize:'cover'}}>
+                `url(${'/assets/img/bg/mega-menu-bg.png'})`,backgroundRepeat:'no-repeat',backgroundPosition:'center right',backgroundSize:'cover'}}>
                   {item.dropdownItems.map((menu, index) => (
                     <li key={index} className={`${menu.hasDropdown ? 'has-dropdown' : ''}`}>
                       <Link href={`${menu.link}`}>{menu.title}</Link>

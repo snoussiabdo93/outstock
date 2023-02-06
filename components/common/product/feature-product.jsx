@@ -23,8 +23,7 @@ const FeatureProduct = ({ index, product, h4 }) => {
             {!h4 && <p>{product.desc}</p>}
             {h4 && <p>{product.desc_2}</p>}
             <Link href={`/product-details/${product.id}`}>
-              <a className="os-btn os-btn-2">buy now /
-                <span>${parseFloat(product.price)}</span>
+              <a className="os-btn os-btn-2"> Get a Quotation now 
               </a>
             </Link>
           </div>

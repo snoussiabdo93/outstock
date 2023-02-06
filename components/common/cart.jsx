@@ -32,9 +32,8 @@ const Cart = () => {
                       <a>{item.title} </a>
                     </Link>
                   </h5>
-                  <div className="cart-price">
+                  <div>
                     <span className="ammount">{item.quantity} <i className="fal fa-times"></i></span>
-                    <span className="price">$ {item.price}</span>
                   </div>
                 </div>
                 <div className="del-icon f-right mt-30">
@@ -47,15 +46,16 @@ const Cart = () => {
 
           </ul>
           <div className="total-price d-flex justify-content-between mb-30">
-            <span>Subtotal:</span>
-            <span>${parseFloat(total)}</span>
+
+            <span>Total Quantity :</span>
+            <span>{cartItems.reduce((a, b)=> a + b.quantity,0)}</span>
           </div>
           <div className="checkout-link">
             <Link href={'/cart'}>
-              <a className="os-btn">view Cart</a>
+              <a className="os-btn">View Quotation Cart</a>
             </Link>
             <Link href={'/checkout'}>
-              <a className="os-btn os-btn-black">Checkout</a>
+              <a className="os-btn os-btn-black">Get A Quotation</a>
             </Link>
           </div>
         </div>}

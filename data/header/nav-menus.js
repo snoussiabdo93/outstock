@@ -1,94 +1,62 @@
 const nav_menus = [
   {
     link: '/',
-    title: 'Home',
-    hasDropdown: true,
-    megamenu: false,
-    dropdownItems: [
-      { link: '/', title: 'Home Style 1' },
-      { link: '/home-2', title: 'Home Style 2' },
-      { link: '/home-3', title: 'Home Style 3' },
-      { link: '/home-4', title: 'Home Style 4' },
-      { link: '/home-5', title: 'Home Style 5' },
-      { link: '/home-6', title: 'Home Style 6' },
-      { link: '/home-7', title: 'Home Style 7' },
-    ]
+    title: 'Home'
+   
   },
   {
     link: '/shop',
-    title: 'Shop',
+    title: 'Products',
     hasDropdown: true,
     megamenu: true,
     dropdownItems: [
       {
         link: '/shop',
-        title: 'Shop Pages',
+        title: 'kitchen',
         dropdownMenu: [
-          { link: '/shop', title: 'Standard Shop Page' },
-          { link: '/shop-right', title: 'Shop Right Sidebar' },
-          { link: '/shop-4-col', title: 'Shop 4 Column' },
-          { link: '/shop-3-col', title: 'Shop 3 Column' },
-          { link: '/shop', title: 'Shop Page' },
-          { link: '/shop', title: 'Shop Page' },
-          { link: '/shop', title: 'Shop Infinity' },
+          { link: '/product-details', title: 'Product 1' },
+          { link: '/product-details', title: 'Product 2' },
+          { link: '/product-details', title: 'Product 3' },
+          { link: '/product-details', title: 'Product 4' },
+          { link: '/product-details', title: 'Product 5' },
+          { link: '/product-details', title: 'Product 6' },
+          { link: '/product-details', title: 'Product 7' },
         ]
       },
       {
         link: '/shop',
-        title: 'Products Pages',
+        title: 'Chess Game',
         dropdownMenu: [
-          { link: '/product-details', title: 'Product Details' },
-          { link: '/product-details', title: 'Product Page V2' },
-          { link: '/product-details', title: 'Product Page V3' },
-          { link: '/product-details', title: 'Product Page V4' },
-          { link: '/product-details', title: 'Simple Product' },
-          { link: '/product-details', title: 'Variable Product' },
-          { link: '/product-details', title: 'External Product' },
+          { link: '/product-details', title: 'Product 1' },
+          { link: '/product-details', title: 'Product 2' },
+          { link: '/product-details', title: 'Product 3' },
+          { link: '/product-details', title: 'Product 4' },
+          { link: '/product-details', title: 'Product 5' },
+          { link: '/product-details', title: 'Product 6' },
+          { link: '/product-details', title: 'Product 7' },
         ]
       },
       {
         link: '/shop',
-        title: 'Other Shop Pages',
+        title: 'accessories',
         dropdownMenu: [
-          { link: '/wishlist', title: 'Wishlist' },
-          { link: '/cart', title: 'Shopping Cart' },
-          { link: '/checkout', title: 'Checkout' },
-          { link: '/register', title: 'Register' },
-          { link: '/login', title: 'Login' },
+          { link: '/product-details', title: 'Product 1' },
+          { link: '/product-details', title: 'Product 2' },
+          { link: '/product-details', title: 'Product 3' },
+          { link: '/product-details', title: 'Product 4' },
+          { link: '/product-details', title: 'Product 5' },
+          { link: '/product-details', title: 'Product 6' },
+          { link: '/product-details', title: 'Product 7' },
         ]
       },
     ]
   },
 
-  {
-    link: '/blog',
-    title: 'Blog',
-    hasDropdown: true,
-    megamenu: false,
-    dropdownItems: [
-      { link: '/blog', title: 'Blog' },
-      { link: '/blog-left-sidebar', title: 'Blog Left Sidebar' },
-      { link: '/blog-no-sidebar', title: 'Blog No Sidebar' },
-      { link: '/blog-2-col', title: 'Blog 2 Column' },
-      { link: '/blog-2-col-mas', title: 'Blog 2 Column Masonary' },
-      { link: '/blog-3-col', title: 'Blog 3 Column' },
-      { link: '/blog-details', title: 'Blog Details' },
-    ]
-  },
+ 
 
   {
-    link: '/shop',
-    title: 'Pages',
-    hasDropdown: true,
-    megamenu: false,
-    dropdownItems: [
-      { link: '/wishlist', title: 'Wishlist' },
-      { link: '/cart', title: 'Shopping Cart' },
-      { link: '/checkout', title: 'Checkout' },
-      { link: '/register', title: 'Register' },
-      { link: '/login', title: 'Login' },
-      { link: '/404', title: 'Error 404' },
-    ]
+    link: '/about',
+    title: 'About',
   },
 
   {

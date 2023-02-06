@@ -112,10 +112,7 @@ const SaleOff = () => {
                                   <a>{item.title}</a>
                                 </Link>
                               </h4>
-                              <div className="product__price transition-3">
-                                <span>${item.price}.00</span>
-                                <span className="old-price">${item.old_price}.00</span>
-                              </div>
+                            
                             </div>
                             <div className="add-cart p-absolute transition-3">
                               <button onClick={() => dispatch(cart_product(item))}>+ Add to Cart</button>
