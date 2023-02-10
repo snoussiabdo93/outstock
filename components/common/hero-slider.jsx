@@ -7,7 +7,7 @@ const HeroSlider = ({ home_six }) => {
 
   // slick setting
   const settings = {
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 10000,
     dots: true,
     fade: false,
