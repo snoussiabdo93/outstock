@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 
@@ -11,7 +12,7 @@ const SingleSmProduct = ({ product }) => {
         <div className="features__product-thumb mr-15">
           <Link href={`/product-details/${product.id}`}>
             <a>
-              <img src={product.img} alt="pro-sm-1" />
+              <Image src={product.img} alt="pro-sm-1" width={'100%'} height={'100%'}/>
             </a>
           </Link>
         </div>

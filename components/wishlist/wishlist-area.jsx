@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -38,7 +39,7 @@ const WishlistArea = () => {
                           <td className="product-thumbnail">
                             <Link href={`/product-details/${product.id}`}>
                               <a>
-                                <img src={product.img} alt="" />
+                                <Image src={product.img} alt="" width={"100%"} height={"100%"}  />
                               </a>
                             </Link>
                           </td>

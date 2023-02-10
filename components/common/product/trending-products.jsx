@@ -6,6 +6,7 @@ import ProductModal from "../modal/product-modal";
 import { selectProducts, single_product } from "../../../redux/features/product-slice";
 import { cart_product } from "../../../redux/features/cart-slice";
 import { add_to_wishlist } from "../../../redux/features/wishlist-slice";
+import Image from "next/image";
 
 
 const Products = ({ h4, h5 }) => {
@@ -79,8 +80,8 @@ const Products = ({ h4, h5 }) => {
                                 <div className="product__thumb">
                                   <Link href={`/product-details/${product.id}`}>
                                     <a className="w-img">
-                                      <img src={product.img} alt="product-img" />
-                                      <img className="product__thumb-2" src={product.thumb_img} alt="product-img" />
+                                      <Image src={product.img} alt="product-img" width={"100%"} height={"100%"} />
+                                      <Image className="product__thumb-2" src={product.thumb_img} alt="product-img" width={"100%"} height={"100%"} />
                                     </a>
                                   </Link>
                                   <div className="product__action transition-3">

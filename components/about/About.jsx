@@ -28,7 +28,7 @@ const About = () => {
             </div>
             <div className="col-xl-6 col-lg-6">
               <div >
-                <Image  src={about} width='500px' height={"500px"} />
+                <Image  src={about} width='500px' height={"500px"} alt="about-img"/>
                 <p className="ajax-response"></p>
               </div>
             </div>

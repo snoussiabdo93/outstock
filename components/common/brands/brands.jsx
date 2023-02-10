@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Slider from "react-slick";
 import { brands } from "../../../data";
 
@@ -49,7 +50,7 @@ const Brands = ({df}) => {
                     brands.map((item, index) => {
                       return <div key={item.id} className="client__thumb">
                         <a href="#">
-                          <img src={item.img} alt="client" />
+                          <Image src={item.img} alt="client" />
                         </a>
                       </div>
                     })

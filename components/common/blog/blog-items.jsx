@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
@@ -27,7 +28,7 @@ const BlogItems = ({ itemsPerPage, items }) => {
             <div className="blog__thumb fix">
               <Link href={`/blog-details/${blog.id}`}>
                 <a className="w-img">
-                  <img src={blog.img} alt="blog" />
+                  <Image src={blog.img} alt="blog" width={'100%'} height={'100%'} />
                 </a>
               </Link>
             </div>

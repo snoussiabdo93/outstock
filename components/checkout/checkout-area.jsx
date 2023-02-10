@@ -133,7 +133,7 @@ const CheckoutArea = () => {
                   <div className="payment-method">
                     
                     <div className="order-button-payment mt-20">
-                      <button type="submit" className="os-btn os-btn-black"> <i class="fa fa-share-square-o" aria-hidden="true"></i> Receive  A Quotation </button>
+                      <button type="submit" className="os-btn os-btn-black"> <i className="fa fa-share-square-o" aria-hidden="true"></i> Receive  A Quotation </button>
                     </div>
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
@@ -50,8 +51,8 @@ function ProductList({ itemsPerPage, items,setShowing }) {
               <div className="product__thumb list">
                 <Link href={`/product-details/${product.id}`}>
                   <a className="w-img">
-                    <img src={product.img} alt="product-img" />
-                    {product.thumb_img && <img className="product__thumb-2" src={product.thumb_img} alt="product-img" />}
+                    <Image src={product.img} alt="product-img" width={"100%"} height={"100%"}/>
+                    {product.thumb_img && <Image className="product__thumb-2" src={product.thumb_img} alt="product-img" width={"100%"} height={"100%"} />}
                   </a>
                 </Link>
                 {product.product__sale && <div className="product__sale">

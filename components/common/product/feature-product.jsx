@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const FeatureProduct = ({ index, product, h4 }) => {
   return (
@@ -9,7 +10,7 @@ const FeatureProduct = ({ index, product, h4 }) => {
           <div className="banner__thumb fix">
             <Link href={`/product-details/${product.id}`}>
               <a className="w-img">
-                <img src={product.img} alt="banner" />
+                <Image src={product.img} alt="banner" />
               </a>
             </Link>
           </div>

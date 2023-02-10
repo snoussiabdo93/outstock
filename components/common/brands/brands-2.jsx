@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import Image from "next/image";
 
 import { brands } from "../../../data";
 import { SampleNextArrow, SamplePrevArrow } from "../../../utils/slider-arrow";
@@ -53,7 +54,7 @@ const Brands = () => {
                 brands.map((item, index) => {
                   return <div key={item.id} className="brand__slider-item">
                     <div className="brand__image">
-                      <img src={item.img} alt="client" />
+                      <Image src={item.img} alt="client" />
                     </div>
                   </div>
                 })

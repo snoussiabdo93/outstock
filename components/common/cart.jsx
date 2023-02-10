@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import useCartInfo from '../../hooks/use-cart-info';
@@ -22,7 +23,7 @@ const Cart = () => {
                 <div className="cart-img f-left">
                   <Link href={`/product-details/${item.id}`}>
                     <a>
-                      <img src={item.img} alt="" />
+                      <Image src={item.img} alt="" />
                     </a>
                   </Link>
                 </div>

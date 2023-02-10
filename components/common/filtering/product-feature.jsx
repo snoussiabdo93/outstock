@@ -1,6 +1,7 @@
 import { selectProducts } from '../../../redux/features/product-slice';
 import { useSelector } from 'react-redux';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ProductFeature = () => {
   const products = useSelector(selectProducts);
@@ -21,7 +22,7 @@ const ProductFeature = () => {
                     <div className="features__product-thumb mr-15">
                       <Link href={`/product-details/${product.id}`}>
                         <a>
-                          <img src={product.img} alt="pro-sm-1" />
+                          <Image src={product.img} alt="pro-sm-1" />
                         </a>
                       </Link>
                     </div>

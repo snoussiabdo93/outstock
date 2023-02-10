@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import Slider from "react-slick";
@@ -77,8 +78,8 @@ const SaleOff = () => {
                           <div className="product__thumb">
                             <Link href={`/product-details/${item.id}`}>
                               <a className="w-img">
-                                <img src={item.img} alt="product-img" />
-                                <img className="product__thumb-2" src={item.thumb_img} alt="product-img" />
+                                <Image src={item.img} alt="product-img" width={"100%"} height={"100%"} />
+                                <Image className="product__thumb-2" src={item.thumb_img} alt="product-img" width={"100%"} height={"100%"} />
                               </a>
                             </Link>
                             <div className="product__action transition-3">

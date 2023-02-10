@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 
@@ -29,7 +30,7 @@ const ProductModal = () => {
                           <div key={index} className={`tab-pane fade ${index === 0 ? 'show active' : ''} `}
                             id={`nav-${index}`} role="tabpanel" aria-labelledby={`nav-${index}-tab`}>
                             <div className="product__modal-img w-img">
-                              <img src={img.src} alt="" />
+                              <Image src={img.src} alt="" />
                             </div>
                           </div>
                         ))}
@@ -43,7 +44,7 @@ const ProductModal = () => {
                               role="tab" aria-controls={`nav-${index}`}
                               aria-selected={index === 0 ? 'true' : 'false'}>
                               <div className="product__nav-img w-img">
-                                <img src={img.src} alt="" />
+                                <Image src={img.src} alt="" />
                               </div>
                             </a>
                           ))}

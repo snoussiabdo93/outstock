@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { banners } from "../../../data";
 
@@ -8,7 +9,7 @@ const BannerThree = () => {
         {banners.slice(6, 9).map(banner => (
           <div key={banner.id} className="banner__item-3 mb-30">
             <div className="banner__item-3-image m-img">
-              <img src={banner.img} alt="" />
+              <Image src={banner.img} alt="" />
             </div>
             <div className="banner__content-5">
               <h5>{banner.title}</h5>

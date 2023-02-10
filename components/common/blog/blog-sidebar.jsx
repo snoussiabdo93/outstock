@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { blogs } from "../../../data";
 
@@ -118,7 +119,7 @@ const BlogSidebar = () => {
                     <div className="rc__post-thumb mr-20 ">
                       <Link href={`/blog-details/${blog.id}`}>
                         <a>
-                          <img src={blog.img} alt="blog-1" />
+                          <Image src={blog.img} alt="blog-1" width={'100%'} height={'100%'} />
                         </a>
                       </Link>
                     </div>
@@ -194,7 +195,7 @@ const RecentComment = ({ name }) => {
   return (
     <li className="d-flex mb-20">
       <div className="rc__comments-avater mr-15">
-        <img src="/assets/img/blog/comments/avater-3.png" alt="" />
+        <Image src="/assets/img/blog/comments/avater-3.png" alt="" />
       </div>
       <div className="rc__comments-content">
         <h6>{name}</h6>

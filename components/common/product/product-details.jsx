@@ -4,6 +4,7 @@ import { cartProducts, cart_product, decrease_quantity } from '../../../redux/fe
 import { selectProducts, single_product } from '../../../redux/features/product-slice';
 import ProductModal from '../modal/product-modal';
 import { add_to_wishlist } from '../../../redux/features/wishlist-slice';
+import Image from 'next/image';
 
 const ProductDetails = ({ product }) => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const ProductDetails = ({ product }) => {
                             role="tab" aria-controls={`nav-${index}`}
                             aria-selected={index === 0 ? 'true' : 'false'}>
                             <div className="product__nav-img w-img">
-                              <img src={img.src} alt="" />
+                              <Image src={img.src} alt="" />
                             </div>
                           </a>
                         ))}
@@ -40,7 +41,7 @@ const ProductDetails = ({ product }) => {
                       <div key={index} className={`tab-pane fade ${index === 0 ? 'show active' : ''} `}
                         id={`nav-${index}`} role="tabpanel" aria-labelledby={`nav-${index}-tab`}>
                         <div className="product__modal-img w-img">
-                          <img src={img.src} alt="" />
+                          <Image src={img.src} alt="" />
                           {product.product_sale && <div className="product__sale ">
                             <span className="new">new</span>
                             <span className="percent">-16%</span>
@@ -198,7 +199,7 @@ const ProductDetails = ({ product }) => {
                                 <li key={index} className={review.children ? 'children' : ''}>
                                   <div className="comments-box">
                                     <div className="comments-avatar">
-                                      <img src={review.img} alt="" />
+                                      <Image src={review.img} alt="" />
                                     </div>
                                     <div className="comments-text">
                                       <div className="avatar-name">
@@ -342,9 +343,9 @@ const RelatedProducts = () => {
                   <div className="product__thumb">
                     <Link href={`/product-details/${product.id}`}>
                       <a className="w-img">
-                        <img src={product.img} alt="product-img" />
+                        <Image src={product.img} alt="product-img" />
                         {product.thumb_img &&
-                          <img className="product__thumb-2" src={product.thumb_img} alt="product-img" />
+                          <Image className="product__thumb-2" src={product.thumb_img} alt="product-img" />
                         }
                       </a>
                     </Link>

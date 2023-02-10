@@ -1,5 +1,6 @@
 import { banners } from "../../../data";
 import Link from "next/link";
+import Image from "next/image";
 
 const Banner = ({ df, h4, home_six }) => {
   return (
@@ -15,7 +16,7 @@ const Banner = ({ df, h4, home_six }) => {
                     <div className="banner__thumb fix">
                       <Link href="/shop">
                         <a className="w-img">
-                          <img src={banner.img} alt="banner" />
+                          <Image src={banner.img} alt="banner" />
                         </a>
                       </Link>
                     </div>

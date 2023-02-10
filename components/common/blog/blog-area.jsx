@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import { blogs } from "../../../data";
 import Link from 'next/link';
+import Image from "next/image";
 
 const blog_items = blogs.filter(blog => blog.blog_one);
 
@@ -57,7 +58,7 @@ const BlogArea = ({ home_three, h4 }) => {
                         <div className="blog__thumb fix">
                           <Link href={`/blog-details/${item.id}`}>
                             <a className="w-img">
-                              <img src={item.img} alt="blog" />
+                              <Image src={item.img} alt="blog" width={'100%'} height={'100%'} />
                             </a>
                           </Link>
                         </div>

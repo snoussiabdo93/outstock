@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux';
 import useCartInfo from '../../hooks/use-cart-info';
@@ -40,7 +41,7 @@ const CartArea = () => {
                           <td className="product-thumbnail">
                             <Link href={`/product-details/${item.id}`}>
                               <a>
-                                <img src={item.img} alt="" />
+                                <Image src={item.img} alt="" />
                               </a>
                             </Link>
                           </td>
@@ -83,7 +84,7 @@ const CartArea = () => {
                       <h2>Cart totals</h2>
                       <ul className="mb-20">
                         <li>Total Products <span>{cartItems.length}</span></li>
-                        <li>Total Quentity <span>{cartItems.reduce((a, b)=> a + b.quantity,0)}</span></li>
+                        <li>Total Quantity <span>{cartItems.reduce((a, b)=> a + b.quantity,0)}</span></li>
                       </ul>
                       <Link href={'/checkout'}>
                         <a className="os-btn"> Get A Quotation </a>

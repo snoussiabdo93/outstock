@@ -1,5 +1,4 @@
 import Header from '../../layout/headers/header';
-import BlogArea from '../common/blog/blog-area';
 import Brands from '../common/brands/brands';
 import Banner from '../common/banner/banner';
 import BannerTwo from '../common/banner/banner-2';
