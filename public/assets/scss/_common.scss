@@ -9,6 +9,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: auto !important;
+  }
  body {
 	font-family: $pop;
 	font-size: 14px;
@@ -16,9 +19,10 @@
 	color: $body-text-color;
 	line-height: 24px;
 	overflow-x: hidden;
-	scroll-behavior: auto;
 
 }
+
+  
 
 .w-img{
 	& img{
