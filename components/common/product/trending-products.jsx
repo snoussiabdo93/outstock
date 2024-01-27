@@ -97,7 +97,7 @@ if(Refrun.current=== false){
 
         const q = query(
           Ref,
-          where('categ', '!=','collection') 
+          where('new', '==',true) 
          )
         const qSnap = await getDocs(q)
 
@@ -108,9 +108,8 @@ if(Refrun.current=== false){
                 data: car.data()
             })
         })
-        console.log(carsArray)
         setdata(carsArray)
-       
+       console.log(carsArray)
     } catch (error) {
         console.log(error)
         

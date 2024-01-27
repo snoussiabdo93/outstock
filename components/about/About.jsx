@@ -15,7 +15,7 @@ const About = () => {
               
                 <p>
 
-                  Olizana is a Tunisian company <strong>Since 1980 In sfax </strong> specializing in the construction of articles using olive wood.<br/> Founded by enthusiasts of craftsmanship and environmental preservation, the company is committed to creating unique and sustainable products using olive wood, an abundant natural resource in Tunisia. <br/>
+                  Olizana is a Tunisian company <strong>Since 1980 In sfax </strong> specializing in the making of articles using olive wood.<br/> Founded by enthusiasts of craftsmanship and environmental preservation, the company is committed to creating unique and sustainable products using olive wood, an abundant natural resource in Tunisia. <br/>
 
                   Olizana stands out for its eco-friendly and environmentally conscious approach.<br/>
                   The olive wood used is sourced from olive trees that have reached the end of their productive life cycle, thereby avoiding unnecessary felling.<br/>

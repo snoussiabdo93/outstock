@@ -40,6 +40,15 @@ const ProductDetails = () => {
     const segments = currentPath.split('/'); // Split path into segments
     const lastSegment = segments[segments.length - 1];
 
+    function checkInput(input) {
+      if (input !== null) {
+        console.log(input)
+
+        return input;
+      } 
+      
+    }
+
   useEffect(()=>{
   
     const fetchCarListing = async () => {
@@ -53,7 +62,7 @@ const ProductDetails = () => {
       setdata({...data,id:lastSegment})
 
 
-      const imgs = [data.photo1 !==''&&data.photo1,data.photo2!==''>0&&data.photo2,data.photo3 !==''&&data.photo3,data.photo4!==''>0&&data.photo4,data.photo5!==''>0&&data.photo5]
+      const imgs = [data.photo1 ,data.photo2 ,data.photo3, data.photo4,data.photo5]
       const Tails = [data.Taille1!==''&&data.Taille1,data.Taille2 !==''&&data.Taille2,data.Taille3 !==''&&data.Taille3,data.Taille4 !==''&&data.Taille4,data.Taille5 !==''&&data.Taille5]
 
       setImages(imgs )
@@ -84,7 +93,7 @@ const ProductDetails = () => {
 
                 <Slider   className='slider-active' {...settings}>
 
-                    {images.map((img, index) => 
+                    {images.filter(x=> x !== null ).map((img, index) => 
                       
                       {
                       return <div key={index}  >

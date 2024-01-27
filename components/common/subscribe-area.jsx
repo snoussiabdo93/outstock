@@ -15,7 +15,7 @@ const SubscribeArea = ({df,h4}) => {
               <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
                 <div className="subscribe__content text-center">
                   <h2>Get Discount Info</h2>
-                  <p>Subscribe to the Outstock mailing list to receive updates on new arrivals, special offers and other
+                  <p>Subscribe to the Oilzana mailing list to receive updates on new arrivals, special offers and other
                     discount information.</p>
                   <div className="subscribe__form">
                     <form name='subscribe' onSubmit={handleSubmit}>

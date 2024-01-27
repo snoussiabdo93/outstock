@@ -41,7 +41,7 @@ const Header = ({ header_big,white_bg }) => {
                 <div className="logo">
                   <Link href="/">
                     
-                      <Image src={logo} alt="logo" width="120vw" height="120vw" />
+                      <Image src={logo} alt="logo" width="80vw" height="80vw" />
                   </Link>
                 </div>
               </div>

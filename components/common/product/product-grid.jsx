@@ -27,8 +27,8 @@ function ProductGrid({ itemsPerPage,col = "col-xl-4 col-lg-4 col-md-6 col-sm-6 c
   useEffect(() => {
     
 
-    if (items && setShowing) {
-      setShowing(items.length)
+    if (currentItems && setShowing) {
+      setShowing(currentItems.length)
     }
   }, [currentItems, setShowing])
 
@@ -48,13 +48,13 @@ function ProductGrid({ itemsPerPage,col = "col-xl-4 col-lg-4 col-md-6 col-sm-6 c
 
   return (
     <>
-      {items && items.map((product, index) => (
+      {currentItems && currentItems.map((product, index) => (
         <div key={index} className={col}>
           <div className="mb-20 shadow p-1">
-            <div className="product__thumb">
+            <div className="product__thumb"  style={{height :"320px"}} >
               <Link href={`/product-details/${product.id}`}>
                 <a className="w-img">
-                  <img src={product.data.photo1} alt="product-img"  style={{width:'100%' ,height:'40vh'}}  />
+                  <img src={product.data.photo1} alt="product-img"    />
                   {product.thumb_img &&
                     <img  src={product.thumb_img} alt="product-img"  />
                   }

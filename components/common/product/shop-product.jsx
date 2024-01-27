@@ -45,7 +45,6 @@ const ShopProduct = ({ shop_right }) => {
               })
           })
           setdata(Array)
-          console.log(Array)
 
       } catch (error) {
           console.log(error)
@@ -96,7 +95,7 @@ const ShopProduct = ({ shop_right }) => {
                 <div className="tab-content" id="pills-tabContent">
                   <div className="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
                     <div className="row custom-row-10">
-                      <ProductGrid itemsPerPage={12} items={data} setShowing={setShowing} />
+                      <ProductGrid itemsPerPage={10} items={data} setShowing={setShowing} />
                     </div>
                   </div>
 
