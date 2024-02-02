@@ -27,9 +27,10 @@ const HeroSlider = ({ home_six }) => {
                   <div className="container">
                     <div className="row">
                       <div className="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-12 bg-white  bg-opacity-25">
-                        <div className="slider__content p-relative z-index-99  mt-200 "  >
+                        <div className="slider__content p-relative z-index-99 p-2"  >
                           <h2 className="text-scrondary" >{slider.title}</h2>
-                           { /* <p>{slider.subtitle} </p>*/}
+                      {/* <p>{slider.subtitle} </p>*/}
+                       
                           <div className="hero-slider-btn">
                             <Link href="/shop">
                               <a className="os-btn os-btn-2">Discover now</a>

@@ -1,18 +1,5 @@
 {
   "/_app": "pages/_app.js",
-  "/404": "pages/404.html",
-  "/about": "pages/about.html",
-  "/api/hello": "pages/api/hello.js",
-  "/blog-details/[id]": "pages/blog-details/[id].html",
-  "/blog-details": "pages/blog-details.html",
-  "/cart": "pages/cart.html",
-  "/checkout": "pages/checkout.html",
-  "/contact": "pages/contact.html",
-  "/": "pages/index.html",
-  "/product-details/[id]": "pages/product-details/[id].html",
-  "/product-details": "pages/product-details.html",
-  "/shop": "pages/shop.html",
-  "/wishlist": "pages/wishlist.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js"
 }

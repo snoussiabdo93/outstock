@@ -89,7 +89,6 @@ function Products  ({ h4, h5 })  {
 
 
   useEffect(()=>{
-
 if(Refrun.current=== false){
   const fetchCars = async () => {
     try {
@@ -152,14 +151,8 @@ return(()=>{Refrun.current = true})
                                 <div className="product__thumb" key={index} >
                                   <Link href={`/product-details/${product.id}`}>
                                     <a className="w-img">
-                                        <BlurhashWithLoadingImage
-                                          blurhash={blurhash}
-                                          imageSrc={product.data.photo2}
-                                          width={imageWidth}
-                                          height={imageHeight}
-                                        />
+                                    <Image src={product.data.photo2} alt="product-img" width={imageWidth}height={500} />
                                    
-                                      <img   className="product__thumb-2" src={product.data.photo1} alt="product-img" style={{border:'2px',borderRadius:'5%',borderColor:'#0000' }} />
                                     </a>
                                   </Link>
                                   <div className="product__action transition-3">
@@ -178,7 +171,7 @@ return(()=>{Refrun.current = true})
                                     </a>
                                   </div>
 
-                                 {product.data.New&& <div className="product__sale">
+                                 {product.data.new&& <div className="product__sale">
                                       <span  className='new'>
                                         New
                                       </span>
@@ -214,21 +207,17 @@ return(()=>{Refrun.current = true})
                 
                 <Slider {...settings}>
                           {
-                            data.slice(7,data.length).map((product, index) => (
+                            data.slice(8,15).map((product, index) => (
                               <div key={index}  className="product__item">
 
-                              <div key={index} className="product__wrapper mb-60 shadow ">
+                              <div key={index} className="product__wrapper mb-60 shadow   ">
                                 <div className="product__thumb" key={index} >
-                                <Link href={`/product-details/${product.id}`}>
+                                  <Link href={`/product-details/${product.id}`}>
                                     <a className="w-img">
-                                        <BlurhashWithLoadingImage
-                                          blurhash={blurhash}
-                                          imageSrc={product.data.photo2}
-                                          width={imageWidth}
-                                          height={imageHeight}
-                                        />
+                                    <link rel="preload" as="image" href={product.data.photo2}/>
+
+                                    <Image src={product.data.photo2} alt="product-img" width={imageWidth}height={500} />
                                    
-                                      <img   className="product__thumb-2" src={product.data.photo1} alt="product-img" style={{border:'2px',borderRadius:'5%',borderColor:'#0000' }} />
                                     </a>
                                   </Link>
                                   <div className="product__action transition-3">
@@ -247,18 +236,17 @@ return(()=>{Refrun.current = true})
                                     </a>
                                   </div>
 
-                                  {product.product__sale && <div className="product__sale">
-                                    {product.product__sale.map((item, index) => (
-                                      <span key={index} className={`${item === 'new' ? 'new' : 'percent'}`}>
-                                        {item}
+                                 {product.data.new&& <div className="product__sale">
+                                      <span  className='new'>
+                                        New
                                       </span>
-                                    ))}
+                                  
                                   </div>}
 
                                 </div>
-                                <div className="product__content p-relative " >
-                                  <div className="product__content-inner border p-3" style={{height : 60}} >
-                                    <h4>
+                                <div className="product__content p-relative">
+                                  <div className="product__content-inner p-3 border border-color-black"  style={{ height :60 }} >
+                                    <h4  >
                                       <Link href={`/product-details/${product.id}`}>
                                         <a> <h5> {product.data.Label} </h5></a>
                                       </Link>

@@ -5,4 +5,8 @@ const nextConfig = {
 }
 
 
-module.exports = nextConfig
+module.exports ={ nextConfig ,
+  images: {
+  domains: ['cdn-api.jetadmin.app'],
+},
+}

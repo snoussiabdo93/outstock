@@ -7,6 +7,7 @@ import { add_force_page, add_item_offset, single_product } from '../../../redux/
 import { add_to_wishlist } from '../../../redux/features/wishlist-slice';
 import { cart_product } from '../../../redux/features/cart-slice';
 import Pagination from '../pagination';
+import Image from 'next/image';
 
 function ProductGrid({ itemsPerPage,col = "col-xl-4 col-lg-4 col-md-6 col-sm-6 custom-col-10",items,setShowing}){
   const { forcePage, item_offset } = useSelector(state => state.products);
@@ -50,14 +51,12 @@ function ProductGrid({ itemsPerPage,col = "col-xl-4 col-lg-4 col-md-6 col-sm-6 c
     <>
       {currentItems && currentItems.map((product, index) => (
         <div key={index} className={col}>
-          <div className="mb-20 shadow p-1">
-            <div className="product__thumb"  style={{height :"320px"}} >
+          <div className="mb-20 shadow ">
+            <div className="product__thumb"  style={{height :"380px"}} >
               <Link href={`/product-details/${product.id}`}>
                 <a className="w-img">
-                  <img src={product.data.photo1} alt="product-img"    />
-                  {product.thumb_img &&
-                    <img  src={product.thumb_img} alt="product-img"  />
-                  }
+                  <Image src={product.data.photo1} alt="product-img" width={'400vw'} height={"400vh"}   />
+                 
                 </a>
               </Link>
               <div className="product__action transition-3">

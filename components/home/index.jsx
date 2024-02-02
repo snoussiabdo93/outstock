@@ -13,6 +13,7 @@ import React from 'react';
 import BannerThree from '../common/banner/banner-3';
 
 const index = () => {
+
   return (
     <>
       <Header />
@@ -20,7 +21,7 @@ const index = () => {
       <Banner/>
 
       <Products/>
-      <BannerTwo/>
+      <BannerTwo />
       <Blogs/>
 
       <SubscribeArea/>
