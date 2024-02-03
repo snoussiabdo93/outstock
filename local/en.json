@@ -1,0 +1,55 @@
+{
+  "titre": "Video Teleconsultation",
+  "Dashboard":"Dashboard",
+
+"Avalability":" Avalability",
+"Appointements":"Appointements",
+
+"Patients":"Patients",
+
+"Payment":"Payment",
+
+"preAppt":"PreAppointements  Questions",
+
+"Messages":"Messages",
+"signin":"Sign in",
+  "signup":"sign up",
+"Profile":"Profile",
+"Waiting":"Waiting",
+"login":"login", 
+"password":"password",
+"forgetpassword":"Forgot your password ?",
+"youhavecompte":"Do you have an account ?",
+"Enterpass":"Enter password",
+"errlogin":"Invalid login verify email or password",
+"fistname":"Fistname",
+"lastname":"Lastname",
+"address":"Address",
+"state":"State",
+"confpw":"Confirm password",
+"paticmode":"Practice mode",
+"nationalid ":"National id",
+"acceptcond":"I accept the terms and conditions.",
+"errMaj":"At least one capital letter",
+"errMin":"At least a lowercase",
+"err8c":"At least 8 characters minimum",
+"errSp":"At least one special character",
+"errCh":"At least one number",
+"female":"Female",
+"male":"Male",
+"speciality":"Speciality",
+"Private" :"Private Doctor",
+"hospitalDoctor":"hospital Doctor",
+"university-hospital-Doctor":"university hospital Doctor",
+"country":"Country",
+"discSignup":"Please complete this form to create an account!",
+"jobInfo":"job Information",
+"updatepw":" Change your password "
+
+
+
+
+
+
+
+}
