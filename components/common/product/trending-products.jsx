@@ -151,8 +151,8 @@ return(()=>{Refrun.current = true})
 
                               <div key={index} className="product__wrapper mb-60 shadow   ">
                                   <div className="product__thumb" key={index} >
-                                    {loading && <div class="spinner-border" role="status">
-                                      <span class="sr-only">Loading...</span>
+                                    {loading && <div className="spinner-border" role="status">
+                                      <span className ="sr-only">Loading...</span>
                                     </div>
 }
                                   <Link href={`/product-details/${product.id}`}>
