@@ -22,9 +22,7 @@ const ShopProduct = ({ shop_right }) => {
   const [isActive,setIsActive] = useState('grid')
   const [listShowing, setListShowing] = useState(0);
   const [data, setdata] = useState([]);
-  const currentPath = window.location.pathname;
-  const segments = currentPath.split('/'); // Split path into segments
-  const lastSegment = segments[segments.length - 1];
+  
   const handleActive = (list) => {
     setIsActive(list)
   }
@@ -36,7 +34,7 @@ const ShopProduct = ({ shop_right }) => {
           
           const q = query(
             Ref,
-            where('categ', 'in',lastSegment?[lastSegment]:categoryActive) 
+            where('categ', 'in',categoryActive) 
            )
          
           const qSnap = await getDocs(q)

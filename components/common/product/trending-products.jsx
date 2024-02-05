@@ -87,9 +87,11 @@ function Products  ({ h4, h5 })  {
   const [data, setdata] =useState([])
   const Refrun = useRef(false)
 
+  const [loading, setLoading] = useState(true);
 
   useEffect(()=>{
 if(Refrun.current=== false){
+
   const fetchCars = async () => {
     try {
         const Ref = collection(db, 'Produits')
@@ -108,7 +110,7 @@ if(Refrun.current=== false){
             })
         })
         setdata(carsArray)
-       console.log(carsArray)
+        setLoading(false)
     } catch (error) {
         console.log(error)
         
@@ -148,11 +150,14 @@ return(()=>{Refrun.current = true})
                               <div key={index}  className="product__item">
 
                               <div key={index} className="product__wrapper mb-60 shadow   ">
-                                <div className="product__thumb" key={index} >
+                                  <div className="product__thumb" key={index} >
+                                    {loading && <div class="spinner-border" role="status">
+                                      <span class="sr-only">Loading...</span>
+                                    </div>
+}
                                   <Link href={`/product-details/${product.id}`}>
                                     <a className="w-img">
-                                    <Image src={product.data.photo2} alt="product-img" width={imageWidth}height={500} />
-                                   
+                                     <Image src={product.data.photo2} alt="product-img" width={imageWidth}height={500} />                                   
                                     </a>
                                   </Link>
                                   <div className="product__action transition-3">

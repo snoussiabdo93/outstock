@@ -7,14 +7,14 @@ const banners = [
     img:'/assets/img/shop/banner/banner-sm-11.webp',
     title:<> <strong>  <h3>Kitchen Products</h3> </strong>  Over 20 models  <br/>   </>,
     btnText:'Discover now',
-    categ : 'Kitchen',
+    categ : ['Kitchen'],
   },
   {
     id:2,
     img:'/assets/img/shop/banner/banner-sm-2.webp',
     title:<> <strong>  <h3>Chess</h3>  </strong> Over 10 models  <br/>     </>,
     btnText:'Discover now',
-    categ : 'echec',
+    categ : ['echec'],
 
   },
   {
@@ -22,7 +22,7 @@ const banners = [
     img:'/assets/img/shop/banner/banner-sm-3.webp',
     title:<> <strong> <h3> Accessories</h3> </strong>  Over 20 models  <br/>    </>,
     btnText:'Discover now',
-    categ : 'Decoration',
+    categ : ['Decoration'],
 
     
   }, 
@@ -32,7 +32,7 @@ const banners = [
     img:'/assets/img/shop/banner/banner-sm-133.webp',
     title:<><strong> <h3> Spoons & Spatules</h3> </strong>  Over 20 models  <br/>  </>,
     btnText:'Discover now',
-    categ : 'spati&spoon',
+    categ : ['spati&spoon','CollectionSimple'],
   },
   {
     id:5,
@@ -47,7 +47,7 @@ const banners = [
     img:'/assets/img/shop/banner/banner-big-2.webp',
     title:<><strong> <h3> Boards and Trays</h3> </strong>  Over 20 models  <br/>  </>,
     btnText:'Discover now',
-    categ : 'planche',
+    categ : ['planche'],
 
   },
   // banner three

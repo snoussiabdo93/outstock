@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
   const dispatch = useDispatch();
   const product = useSelector(selectProduct);
   const [items, setItems] = useState(products);
-  const [categoryActive, setCategoryActive] = useState('Decoration');
+  const [categoryActive, setCategoryActive] = useState('CollectionSimple');
   const [price, setPrice] = useState(500);
   const [sizeActive, setSizeActive] = useState('');
   const [color, setColor] = useState('');
