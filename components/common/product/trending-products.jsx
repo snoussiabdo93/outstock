@@ -171,7 +171,7 @@ return(()=>{Refrun.current = true})
                                     </a>
                                   </div>
 
-                                 {product.data.new&& <div className="product__sale">
+                                 {product.data.New&& <div className="product__sale">
                                       <span  className='new'>
                                         New
                                       </span>
@@ -236,7 +236,7 @@ return(()=>{Refrun.current = true})
                                     </a>
                                   </div>
 
-                                 {product.data.new&& <div className="product__sale">
+                                 {product.data.New&& <div className="product__sale">
                                       <span  className='new'>
                                         New
                                       </span>
