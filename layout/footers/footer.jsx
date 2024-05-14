@@ -71,7 +71,7 @@ const Footer = ({ df }) => {
                             <i className="fal fa-envelope-open-text"></i>
                           </div>
                           <div className="text">
-                            <span>Email: Contact@olizana.com</span>
+                            <span>Email: olizanatunisie@gmail.com</span>
                           </div>
                         </li>
                         <li>
